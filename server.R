@@ -1,23 +1,28 @@
-
-# This is the server logic for a Shiny web application.
-# You can find out more about building applications with Shiny here:
-#
-# http://shiny.rstudio.com
-#
-
-library(shiny)
-
-shinyServer(function(input, output) {
-
-  output$distPlot <- renderPlot({
-
-    # generate bins based on input$bins from ui.R
-    x    <- faithful[, 2]
-    bins <- seq(min(x), max(x), length.out = input$bins + 1)
-
-    # draw the histogram with the specified number of bins
-    hist(x, breaks = bins, col = 'darkgray', border = 'white')
-
+server <- function(input, output) {
+  
+  
+  ##############################################################################
+  ## Tile view tab
+  output$tiles <- renderUI({
+    
+    fluidRow(
+      column(12, id="columns",
+             lapply(deputados$images, function(i) {
+               a(box(width=NULL,
+                     title = HTML(paste0("<div class='image-wrap'><img src='./images/",
+                                         deputados$images[deputados$images == i],
+                                         "' class='",
+                                         "fixed-height",
+                                         "'></div>", "<strong>",
+                                         deputados$partido[deputados$images == i],
+                                         "</strong><br>",
+                                         '<span style="font-size: 11pt;">',
+                                         deputados$nome[deputados$images == i],
+                                         '</span>'))
+               ), href= paste0("http://www.camara.leg.br/internet/Deputado/dep_Detalhe.asp?id=", deputados$idParlamentar[deputados$images == i]), target="_blank")
+             })
+      )
+    )
   })
 
-})
+}
