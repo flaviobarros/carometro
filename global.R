@@ -1,0 +1,13 @@
+library("readr")
+library("dplyr")
+library("reshape2")
+library("tidyr")
+library("rhandsontable")
+library("shinyBS")
+library("shinydashboard")
+library("shinyjs")
+library("V8")
+library("markdown")
+library("lazyeval")
+
+load("./data/deputados.rda")
