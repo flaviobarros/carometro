@@ -1,0 +1,9 @@
+name: Shiny
+account: flaviobarros
+server: shinyapps.io
+appId: 95026
+bundleId: 421909
+url: https://flaviobarros.shinyapps.io/Shiny/
+when: 1460840951.06451
+asMultiple: FALSE
+asStatic: FALSE
