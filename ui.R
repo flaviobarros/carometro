@@ -10,12 +10,18 @@ dashboardPage(
     includeScript("www/d3.v3.min.js"),
     includeScript("www/d3-tip.js"),
     useShinyjs(),
-    extendShinyjs(text = showModal),
+    #extendShinyjs(text = showModal),
     sidebarMenu(
-      menuItem("Recipe View", tabName = "recipeView",
-        icon = icon("glass", lib="font-awesome")
+      menuItem("Carômetro", tabName = "carometro"
+        #icon = icon("glass", lib="font-awesome")
       ),
-      menuItem("About", tabName = "about",
+      
+      checkboxGroupInput("voto", "Voto:",
+                         c("A FAVOR" = "A FAVOR",
+                           "CONTRA" = "CONTRA",
+                           "INDECISO" = "INDECISO"), selected = c('A FAVOR', 'CONTRA', 'INDECISO')),
+      
+      menuItem("Sobre", tabName = "sobre",
         icon = icon("info-circle", lib="font-awesome")
       )
     )
@@ -23,14 +29,14 @@ dashboardPage(
 
   dashboardBody(
     tabItems(
-      tabItem(tabName = "recipeView",
+      tabItem(tabName = "carometro",
         uiOutput("tiles")
 #         bsModal("aboutModal", h3(" "), "", size = "large",
 #                 includeMarkdown("www/about.md")
 #         )
       ),
 
-      tabItem(tabName = "about",
+      tabItem(tabName = "sobre",
         box(width = 12,
             includeMarkdown("www/about.md")
         )
