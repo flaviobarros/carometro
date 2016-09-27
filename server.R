@@ -9,12 +9,19 @@ server <- function(input, output) {
   })
   
   ##############################################################################
-  ## Tile view tab
+  ## Renderiznando a UI no server
   output$tiles <- renderUI({
     
+    ## Define um row um column para colocar os boxes    
     fluidRow(
       column(12, id="columns",
+             
+             ## Aqui eu rodo o um lapply sobre os dados
+             ## que cria todos os boxes com a informação
+             ## apropriada
              lapply(deputados()$images, function(i) {
+               
+               ## Criação de cada box
                a(box(width=NULL, #background = deputados$cores[deputados$images == i],
                      title = HTML(paste0("<div class='image-wrap'><img src='./images/",
                                          deputados()$images[deputados()$images == i],
