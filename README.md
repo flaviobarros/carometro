@@ -10,6 +10,10 @@ O objetivo do aplicativo foi explorar os dados da votação do impeachment na c�
 
 O aplicativo conta atualmente com o recurso de filtragem de deputados de acordo com a orientação de voto no impeachment. O ideal, se alguém tiver a disponibilidade, seria submeter um pull request com a informação atualizada.
 
+Preview
+-------
+![](data/carometro.gif)
+
 Como contribuir
 ---------------
 
