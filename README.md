@@ -22,4 +22,4 @@ Faça um [fork](https://github.com/flaviobarros/carometro#fork-destination-box) 
 Autor
 -----
 
-Meu nome é Flavio Barros, sou Estatístico e escrevo regularmente no meu blog, o [R Mining](www.rmining.net).
+Meu nome é Flavio Barros, sou Estatístico e escrevo regularmente no meu blog, o [R Mining](http://www.rmining.net/).
