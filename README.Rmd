@@ -17,6 +17,8 @@ O objetivo do aplicativo foi explorar os dados da votação do impeachment na c�
 
 O aplicativo conta atualmente com o recurso de filtragem de deputados de acordo com a orientação de voto no impeachment. O ideal, se alguém tiver a disponibilidade, seria submeter um pull request com a informação atualizada.
 
+![alt text](data/carometro.gif)
+
 ## Como contribuir
 
 Faça um [fork](https://github.com/flaviobarros/carometro#fork-destination-box) e submeta um [pull request](https://github.com/flaviobarros/carometro/pull/new/master). Se você pretende utilizar algum código deste app, fique a vontade, mas **cite a fonte**. Qualquer dúvida com relação ao uso do app, a como contribuir ou para relatar problemas, use os [issues](https://github.com/flaviobarros/carometro/issues) do Github.

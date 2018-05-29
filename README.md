@@ -19,6 +19,8 @@ acordo com a orientação de voto no impeachment. O ideal, se alguém tiver
 a disponibilidade, seria submeter um pull request com a informação
 atualizada.
 
+![alt text](data/carometro.gif)
+
 ## Como contribuir
 
 Faça um
