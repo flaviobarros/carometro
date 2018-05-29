@@ -7,6 +7,8 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+[![DOI](https://zenodo.org/badge/69086309.svg)](https://zenodo.org/badge/latestdoi/69086309)
+
 Esse app foi construído usando o <a href="http://www.r-project.org/" target="_blank">R</a> e <a href="http://shiny.rstudio.com/" target="_blank">Shiny</a>.
 
 ## Sobre o aplicativo
