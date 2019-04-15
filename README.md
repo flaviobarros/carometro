@@ -35,4 +35,4 @@ contribuir ou para relatar problemas, use os
 ## Autor
 
 Meu nome é Flavio Barros, sou Estatístico e escrevo regularmente no meu
-blog, o [R Mining](www.rmining.net).
+blog, o [R Mining](www.rmining.com.br).
